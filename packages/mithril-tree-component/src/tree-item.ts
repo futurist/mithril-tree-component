@@ -48,6 +48,7 @@ export const TreeItem: FactoryComponent<ITreeItemAttributes> = () => {
     view: ({ attrs: { item, options, dragOptions, selectedId, width } }) => {
       const {
         id,
+        treeButton,
         treeItemView,
         _findChildren,
         _isExpanded,
@@ -84,7 +85,7 @@ export const TreeItem: FactoryComponent<ITreeItemAttributes> = () => {
                 },
                 [
                   hasChildren
-                    ? m(TreeButton, {
+                    ? m(treeButton || TreeButton, {
                         buttonName: isExpanded ? 'expand_less' : 'expand_more',
                         onclick: () => toggle(item, onToggle),
                       })
@@ -100,13 +101,13 @@ export const TreeItem: FactoryComponent<ITreeItemAttributes> = () => {
                 ],
                 m('.mtc__act-group', [
                   canDelete && (canDeleteParent || !hasChildren)
-                    ? m(TreeButton, {
+                    ? m(treeButton || TreeButton, {
                         buttonName: 'delete',
                         onclick: () => onDelete(item),
                       })
                     : '',
                   canCreate && depth < maxDepth
-                    ? m(TreeButton, {
+                    ? m(treeButton || TreeButton, {
                         buttonName: 'add_child',
                         onclick: (ev: MouseEvent) => {
                           ev.stopPropagation();

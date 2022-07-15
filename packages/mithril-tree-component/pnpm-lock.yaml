@@ -17,7 +17,7 @@ specifiers:
   rollup-plugin-terser: ^7.0.2
   rollup-plugin-typescript2: ^0.28.0
   set-value: '>=3.0.2'
-  tslib: ^2.0.3
+  tslib: ^2.4.0
   typedoc: ^0.19.2
   typescript: ^4.0.5
 
@@ -38,7 +38,7 @@ devDependencies:
   rollup-plugin-terser: 7.0.2_rollup@2.32.1
   rollup-plugin-typescript2: 0.28.0_kfwywydngd7hzz5sl7fuue64ty
   set-value: 3.0.2
-  tslib: 2.0.3
+  tslib: 2.4.0
   typedoc: 0.19.2_typescript@4.0.5
   typescript: 4.0.5
 
@@ -2997,8 +2997,8 @@ packages:
     resolution: {integrity: sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ==}
     dev: true
 
-  /tslib/2.0.3:
-    resolution: {integrity: sha512-uZtkfKblCEQtZKBF6EBXVZeQNl82yqtDQdv+eck8u7tdPxjLu2/lp5/uPW+um2tpuxINHWy3GhiccY7QgEaVHQ==}
+  /tslib/2.4.0:
+    resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
     dev: true
 
   /typedoc-default-themes/0.11.4:

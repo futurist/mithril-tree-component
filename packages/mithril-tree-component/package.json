@@ -35,6 +35,11 @@
   "devDependencies": {
     "@types/mithril": "github:MithrilJS/mithril.d.ts#v2",
     "autoprefixer": "^10.0.1",
+    "cssnano": "^4.1.10",
+    "lodash.template": ">=4.5.0",
+    "mixin-deep": ">=2.0.1",
+    "postcss-cssnext": "^3.1.0",
+    "rimraf": "^3.0.2",
     "rollup": "^2.32.1",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-json": "^4.0.0",
@@ -43,14 +48,9 @@
     "rollup-plugin-sourcemaps": "^0.6.3",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.28.0",
-    "cssnano": "^4.1.10",
-    "postcss-cssnext": "^3.1.0",
-    "tslib": "^2.0.3",
-    "typedoc": "^0.19.2",
-    "typescript": "^4.0.5",
-    "rimraf": "^3.0.2",
     "set-value": ">=3.0.2",
-    "mixin-deep": ">=2.0.1",
-    "lodash.template": ">=4.5.0"
+    "tslib": "^2.4.0",
+    "typedoc": "^0.19.2",
+    "typescript": "^4.0.5"
   }
 }

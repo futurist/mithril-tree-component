@@ -1,5 +1,6 @@
-import { Component, Attributes } from 'mithril';
+import { Component, FactoryComponent, Attributes } from 'mithril';
 import { ITreeItem } from '.';
+import { ITreeButtonOptions } from '../utils';
 
 /** Indicates the type of action is performed on the tree item. */
 export type TreeItemAction = 'create' | 'delete' | 'add_child' | 'expand_more' | 'expand_less';
@@ -77,6 +78,7 @@ export interface ITreeOptions {
    * The component will receive an onclick attribute to perform its function.
    */
   button: (name: TreeItemAction) => Component<Attributes>;
+  treeButton: FactoryComponent<ITreeButtonOptions>;
   /** When the tree is empty, what text do you want to show. Default 'Create your first item' */
   placeholder: string;
 }
