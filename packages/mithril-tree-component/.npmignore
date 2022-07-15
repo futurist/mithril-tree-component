@@ -13,3 +13,4 @@ tslint.json
 cssnano.config.js
 rollup.config.js
 img
+pnpm-lock.yaml

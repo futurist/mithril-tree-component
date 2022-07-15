@@ -1,5 +1,5 @@
 {
-  "name": "mithril-tree-component",
+  "name": "mithril-tree-component-futurist",
   "version": "0.7.1",
   "description": "A tree component for the Mitrhil framework.",
   "main": "dist/mithril-tree-component.js",
@@ -7,7 +7,6 @@
   "browser": "dist/mithril-tree-component.mjs",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "link": "pnpm link",
     "start": "rollup -c -w",
     "build": "npm run build:production",
     "clean": "rimraf ./dist ./node_modules/.ignored",

@@ -40,6 +40,8 @@ export interface ITreeOptions {
   onToggle: (treeItem: ITreeItem, isExpanded: boolean) => void | Promise<void>;
   /** Before a tree item is created, this function is invoked. When it returns false, the action is cancelled. */
   onBeforeCreate: (treeItem: ITreeItem) => boolean | void | Promise<boolean>;
+  /** Check whether treeItem has children. */
+  hasChildren: (treeItem: ITreeItem) => boolean | void | Promise<boolean>;
   /** When a tree item has been created, this function is invoked */
   onCreate: (treeItem: ITreeItem) => void | Promise<void>;
   /** Before a tree item is deleted, this function is invoked. When it returns false, the action is cancelled. */

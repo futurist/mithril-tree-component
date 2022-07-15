@@ -327,7 +327,7 @@ export const TreeContainer: FactoryComponent<{
       },
     } as Attributes;
 
-    const hasChildren = (treeItem: ITreeItem) => state.tree && state.tree.some((ti) => ti[parentId] === treeItem[id]);
+    const hasChildren = (treeItem: ITreeItem) => opts.hasChildren ? opts.hasChildren(treeItem) : state.tree && state.tree.some((ti) => ti[parentId] === treeItem[id]);
 
     const addChildren = (treeItem: ITreeItem, width: number) => {
       createTreeItem(treeItem[id], width);
