@@ -1,6 +1,6 @@
 {
   "name": "mithril-tree-component-futurist",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "A tree component for the Mitrhil framework.",
   "main": "dist/mithril-tree-component.js",
   "module": "dist/mithril-tree-component.mjs",
@@ -12,9 +12,9 @@
     "clean": "rimraf ./dist ./node_modules/.ignored",
     "build:production": "npm run clean && rollup -c",
     "build:domain": "typedoc --out ../../docs/typedoc src",
-    "patch-release": "npm run build && npm version patch --force -m \"Patch release\" && npm publish && git push --follow-tags",
-    "minor-release": "npm run build && npm version minor --force -m \"Minor release\" && npm publish && git push --follow-tags",
-    "major-release": "npm run build && npm version major --force -m \"Major release\" && npm publish && git push --follow-tags"
+    "patch-release": "npm run build && npm version patch --force -m \"Patch release\" && npm publish --registry=https://registry.npmjs.org && git push --follow-tags",
+    "minor-release": "npm run build && npm version minor --force -m \"Minor release\" && npm publish --registry=https://registry.npmjs.org && git push --follow-tags",
+    "major-release": "npm run build && npm version major --force -m \"Major release\" && npm publish --registry=https://registry.npmjs.org && git push --follow-tags"
   },
   "repository": {
     "type": "git",
