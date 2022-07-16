@@ -86,6 +86,7 @@ export const TreeItem: FactoryComponent<ITreeItemAttributes> = () => {
                 [
                   hasChildren
                     ? m(treeButton || TreeButton, {
+                        item,
                         buttonName: isExpanded ? 'expand_less' : 'expand_more',
                         onclick: () => toggle(item, onToggle),
                       })
@@ -94,7 +95,7 @@ export const TreeItem: FactoryComponent<ITreeItemAttributes> = () => {
                     '.mtc__item-title',
                     {
                       class: `${canUpdate ? 'mtc__moveable' : ''} ${hasChildren ? '' : 'mtc__childless-item'}`,
-                      style: `max-width: ${width}px`,
+                      // style: `max-width: ${width}px`,
                     },
                     m(treeItemView, { treeItem: item, depth, width })
                   ),
@@ -102,12 +103,14 @@ export const TreeItem: FactoryComponent<ITreeItemAttributes> = () => {
                 m('.mtc__act-group', [
                   canDelete && (canDeleteParent || !hasChildren)
                     ? m(treeButton || TreeButton, {
+                        item,
                         buttonName: 'delete',
                         onclick: () => onDelete(item),
                       })
                     : '',
                   canCreate && depth < maxDepth
                     ? m(treeButton || TreeButton, {
+                        item,
                         buttonName: 'add_child',
                         onclick: (ev: MouseEvent) => {
                           ev.stopPropagation();

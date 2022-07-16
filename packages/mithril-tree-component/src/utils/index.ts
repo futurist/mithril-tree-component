@@ -1,5 +1,5 @@
 import m, { FactoryComponent, Attributes } from 'mithril';
-import { TreeItemAction } from '..';
+import { TreeItemAction, ITreeItem } from '..';
 
 /**
  * Create a GUID
@@ -22,6 +22,7 @@ export const move = <T>(arr: T[], from: number, to: number) =>
   arr ? arr.splice(to, 0, arr.splice(from, 1)[0]) : undefined;
 
 export interface ITreeButtonOptions extends Attributes {
+  item: ITreeItem | null;
   buttonName: TreeItemAction;
 }
 

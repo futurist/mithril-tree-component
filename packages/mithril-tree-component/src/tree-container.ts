@@ -1,4 +1,4 @@
-import './styles/tree-container.css';
+// import './styles/tree-container.css';
 import m, { FactoryComponent, Attributes, VnodeDOM } from 'mithril';
 import { TreeItem, TreeItemIdPrefix } from './tree-item';
 import { IInternalTreeOptions } from './models/tree-options';
@@ -436,6 +436,7 @@ export const TreeContainer: FactoryComponent<{
                         m(
                           '.mtc__indent',
                           m(TreeButton, {
+                            item: null,
                             buttonName: 'create',
                             onclick: () => _createItem(),
                           })
