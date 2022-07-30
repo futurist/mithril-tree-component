@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/erikvullings/mithril-tree-component#readme",
   "scripts": {
-    "postinstall": "lerna run link", 
+    "postinstall": "lerna run link",
     "build": "lerna run build",
     "clean:local": "rimraf ./docs",
     "clean": "npm run clean:local && lerna run --parallel clean",
